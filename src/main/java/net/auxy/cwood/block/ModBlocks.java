@@ -5,25 +5,23 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
 import net.auxy.cwood.Cwood;
 import net.auxy.cwood.item.ModItemGroup;
-import net.minecraft.block.Block;
-import net.minecraft.block.Blocks;
-import net.minecraft.block.ExperienceDroppingBlock;
-import net.minecraft.block.Material;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
+import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
+
+
+
 public class ModBlocks {
-
-    public static final Block JADE_ORE = registerBlock("jade_ore",
-            new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(),
-                    UniformIntProvider.create(2, 6)), ModItemGroup.JADE);
-
-    public static final Block RED_PLANKS = registerBlock("red_planks",
-            new Block(FabricBlockSettings.copyOf(Blocks.BIRCH_PLANKS)), ModItemGroup.JADE);
+    public static final Block JADE_ORE = registerBlock("jade_ore", new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(), UniformIntProvider.create(2, 6)), ModItemGroup.Amod);
+    public static final Block RED_PLANKS = registerBlock("red_planks", new Block(AbstractBlock.Settings.of(Material.WOOD, MapColor.RED).strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD)), ModItemGroup.Amod);
+    public static final Block WHITE_PLANKS = registerBlock("white_planks", new Block(AbstractBlock.Settings.of(Material.WOOD, MapColor.WHITE).strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD)), ModItemGroup.Amod);
+    public static final Block RED_WOOD_STAIRS = registerBlock("red_wood_stairs", new StairsBlock(RED_PLANKS.getDefaultState(), AbstractBlock.Settings.of(Material.WOOD, MapColor.RED).strength(2.0f,3.0f).sounds(BlockSoundGroup.WOOD)), ModItemGroup.Amod);
 
 
 
@@ -50,10 +48,7 @@ public class ModBlocks {
 
 
 
-    public static void registerModBlocks() {
-
-        Cwood.LOGGER.info("Registering Mod Blocks for " + Cwood.MOD_ID);
-    }
+    public static void registerModBlocks() {Cwood.LOGGER.info("Registering Mod Blocks for " + Cwood.MOD_ID);}
 }
 
 

@@ -1,6 +1,7 @@
 {
 	"replace": false,
 	"values": [
-		"cwood:red_planks"
+		"cwood:red_planks",
+		"cwood:white_planks"
 	]
 }
