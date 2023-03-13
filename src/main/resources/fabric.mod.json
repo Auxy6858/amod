@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "id": "modid",
-  "version": "${version}",
+  "id": "cwood",
+  "version": "${1.0}",
 
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "colouredwood",
+  "description": "Adds coloured varients of wood to minecraft, can be crafted by combining wood with dye",
   "authors": [
-    "Me!"
+    "Auxy"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
+    "homepage": "https://cambee093.wixsite.com/auxy",
     "sources": "https://github.com/FabricMC/fabric-example-mod"
   },
 
@@ -19,11 +19,11 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.fabricmc.example.ExampleMod"
+      "net.auxy.cwood.Cwood"
     ]
   },
   "mixins": [
-    "modid.mixins.json"
+    "cwood.mixins.json"
   ],
 
   "depends": {
