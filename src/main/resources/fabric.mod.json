@@ -3,7 +3,7 @@
   "id": "cwood",
   "version": "${1.0}",
 
-  "name": "colouredwood",
+  "name": "Auxy's Mod",
   "description": "Adds coloured varients of wood to minecraft, can be crafted by combining wood with dye",
   "authors": [
     "Auxy"
@@ -14,13 +14,18 @@
   },
 
   "license": "CC0-1.0",
-  "icon": "assets/modid/icon.png",
+  "icon": "assets/cwood/icon.png",
 
   "environment": "*",
   "entrypoints": {
     "main": [
       "net.auxy.cwood.Cwood"
+    ],
+    "client": [
+      "net.auxy.cwood.CwoodClientMod"
     ]
+
+
   },
   "mixins": [
     "cwood.mixins.json"

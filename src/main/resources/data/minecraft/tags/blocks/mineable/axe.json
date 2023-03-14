@@ -2,7 +2,9 @@
   "replace": false,
   "values": [
     "cwood:red_planks",
-    "cwood:white_planks"
+    "cwood:white_planks",
+    "cwood:red_wood_stairs",
+    "cwood:red_wood_slab"
 
   ]
 }

@@ -19,10 +19,10 @@ import net.minecraft.util.math.intprovider.UniformIntProvider;
 
 public class ModBlocks {
     public static final Block JADE_ORE = registerBlock("jade_ore", new ExperienceDroppingBlock(FabricBlockSettings.of(Material.STONE).strength(4.0f).requiresTool(), UniformIntProvider.create(2, 6)), ModItemGroup.Amod);
-    public static final Block RED_PLANKS = registerBlock("red_planks", new Block(AbstractBlock.Settings.of(Material.WOOD, MapColor.RED).strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD)), ModItemGroup.Amod);
-    public static final Block WHITE_PLANKS = registerBlock("white_planks", new Block(AbstractBlock.Settings.of(Material.WOOD, MapColor.WHITE).strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD)), ModItemGroup.Amod);
-    public static final Block RED_WOOD_STAIRS = registerBlock("red_wood_stairs", new StairsBlock(RED_PLANKS.getDefaultState(), AbstractBlock.Settings.of(Material.WOOD, MapColor.RED).strength(2.0f,3.0f).sounds(BlockSoundGroup.WOOD)), ModItemGroup.Amod);
-
+    public static final Block RED_PLANKS = registerBlock("red_planks", new Block(FabricBlockSettings.of(Material.WOOD, MapColor.RED).strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD)), ModItemGroup.Amod);
+    public static final Block WHITE_PLANKS = registerBlock("white_planks", new Block(FabricBlockSettings.of(Material.WOOD, MapColor.WHITE).strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD)), ModItemGroup.Amod);
+    public static final Block RED_WOOD_STAIRS = registerBlock("red_wood_stairs", new ModStairsBlock(ModBlocks.RED_PLANKS.getDefaultState(), FabricBlockSettings.of(Material.WOOD, MapColor.RED).strength(2.0f,3.0f).sounds(BlockSoundGroup.WOOD)), ModItemGroup.Amod);
+    public static final Block RED_WOOD_SLAB = registerBlock("red_wood_slab", new ModSlabBlock(FabricBlockSettings.of(Material.WOOD, MapColor.RED).strength(2.0f, 3.0f).sounds(BlockSoundGroup.WOOD)), ModItemGroup.Amod);
 
 
 
