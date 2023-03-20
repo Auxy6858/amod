@@ -1,0 +1,8 @@
+{
+  "variants": {
+    "facing=north": {"model": "cwood:block/filtration_block"},
+    "facing=east": {"model": "cwood:block/filtration_block", "y": 90},
+    "facing=south": {"model": "cwood:block/filtration_block", "y": 180},
+    "facing=west": {"model": "cwood:block/filtration_block", "y": 270}
+  }
+}

@@ -8,7 +8,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 
-public class ModItemGroup {
+public class ModItemGroup  {
     public static ItemGroup Amod;
 
     public static void registerItemGroups() {

@@ -4,7 +4,10 @@
     "cwood:red_planks",
     "cwood:white_planks",
     "cwood:red_wood_stairs",
-    "cwood:red_wood_slab"
+    "cwood:red_wood_slab",
+    "cwood:red_wood_fence",
+    "cwood:red_wood_fence_gate",
+    "cwood:red_wood_door"
 
   ]
 }

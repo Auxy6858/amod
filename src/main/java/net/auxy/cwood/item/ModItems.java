@@ -12,8 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 
-    public static final Item JADE = registerItem("jade",
-            new Item(new FabricItemSettings()));
+    public static final Item JADE = registerItem("jade", new Item(new FabricItemSettings()));
 
 
     private static Item registerItem(String name, Item item) {

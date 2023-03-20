@@ -5,6 +5,11 @@
   "block.cwood.red_planks": "Red Planks",
   "block.cwood.white_planks": "White Planks",
   "block.cwood.red_wood_stairs": "Red Wood Stairs",
-  "block.cwood.red_wood_slab": "Red Wood Slab"
+  "block.cwood.red_wood_slab": "Red Wood Slab",
+  "block.cwood.red_wood_fence": "Red Wood Fence",
+  "block.cwood.red_wood_fence_gate": "Red Wood Fence Gate",
+  "block.cwood.red_wood_door": "Red Wood Door",
+  "block.cwood.grainy_sand": "Grainy Sand",
+  "block.cwood.filtration_block": "Filter"
 
 }

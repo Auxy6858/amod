@@ -11,6 +11,8 @@ public class FlammableModBlocks {
         registry.add(ModBlocks.RED_PLANKS, 5, 20);
         registry.add(ModBlocks.WHITE_PLANKS, 5, 20);
         registry.add(ModBlocks.RED_WOOD_STAIRS, 5, 20);
+        registry.add(ModBlocks.RED_WOOD_FENCE,5, 20);
+        registry.add(ModBlocks.RED_WOOD_FENCE_GATE,5,20);
 
     }
 }

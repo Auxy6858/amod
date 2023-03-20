@@ -1,15 +1,20 @@
 {
-  "type": "minecraft:crafting_shapeless",
-  "ingredients": [
-    {
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "#": {
       "tag": "minecraft:planks"
     },
-    {
+    "X": {
       "item": "minecraft:white_dye"
     }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "###"
   ],
   "result": {
-    "item": "cwood:white_planks",
-    "count": 1
+    "count": 8,
+    "item": "cwood:white_planks"
   }
 }
